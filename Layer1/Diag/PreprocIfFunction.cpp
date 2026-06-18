@@ -14,5 +14,5 @@ _SOME_FUNCTION(GG *gg)
 _SOME_FUNCTION()
 #endif
 {
-    return 0;
+    return 1;
 }

@@ -9,6 +9,8 @@ PUBLIC int add(int a, int b) {
 
 PUBLIC int subtract(int a, int b) {
     ++g_utilsCounter;
+	g_utilsCounter = g_utilsCounter*2;
+	a = a*2;
     return a - b;
 }
 
