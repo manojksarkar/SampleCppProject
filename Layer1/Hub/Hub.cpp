@@ -41,6 +41,7 @@ PUBLIC int hubCompute(int a, int b) {
 
     // Sample/Util — Hub is the second external caller alongside App
     int ua = utilAbs(a);
+	ua = ua*2;
     int uc = utilChain(a);
     int ub = utilBlend(a, b, 40);
 
@@ -48,5 +49,6 @@ PUBLIC int hubCompute(int a, int b) {
               + ca + cp + co + cpl + cnb + cwc + cer
               + la + lm + ln + ll
               + ua + uc + ub;
+	total = total*10;
     return total;
 }
