@@ -17,3 +17,11 @@ PUBLIC int subtract(int a, int b) {
 PROTECTED int computeBoth(int a, int b) {
     return add(a, b) + subtract(a, b);
 }
+PUBLIC int multiply(int a, int b) {
+    ++g_utilsCounter;
+    return a * b;
+}
+
+PRIVATE int clampPositive(int v) {
+    return v < 0 ? 0 : v;
+}
