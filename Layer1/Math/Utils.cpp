@@ -28,6 +28,15 @@ PUBLIC int multiply(int a, int b) {
     return a * b;
 }
 
+PUBLIC int power(int base, int exp) {
+    ++g_utilsCounter;
+    int result = 1;
+    for (int i = 0; i < exp; i++) {
+        result = multiply(result, base);
+    }
+    return result;
+}
+
 PRIVATE int clampPositive(int v) {
     return v < 0 ? 0 : v;
 }

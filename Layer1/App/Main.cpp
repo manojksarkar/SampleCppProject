@@ -16,7 +16,8 @@ PUBLIC int calculate() {
     int sum = add(10, 5);
     int both = computeBoth(3, 4);  // math: external->computeBoth->add,subtract (internal)
     int product = multiply(sum + both, 3);
-    return product;
+    int raised = power(2, 5);  // math: external->power->multiply (internal)
+    return product + raised;
 }
 
 PUBLIC int calculateWithCallback() {
