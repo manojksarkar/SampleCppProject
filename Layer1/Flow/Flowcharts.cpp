@@ -233,6 +233,5 @@ PUBLIC int runFlowTests() {
     total += fnDeeplyNested(1, 1, 1);
     total += fnMultipleReturns(3, 2);
     total += fnLoopNestedIfElse(9);
-    total += fnVeryLongLinearPipeline(7);
     return total;
 }

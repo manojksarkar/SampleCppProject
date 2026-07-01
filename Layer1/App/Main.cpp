@@ -115,6 +115,7 @@ PUBLIC int main() {
     int result7 = runDirectionTests();
     int result8 = runFlowTests();
     int result9 = runSampleTests();
-    g_globalResult = result1 + result2 + result3 + result4 + result5 + result6 + result7 + result8 + result9;
+    int result10 = fnVeryLongLinearPipeline(7);
+    g_globalResult = result1 + result2 + result3 + result4 + result5 + result6 + result7 + result8 + result9 + result10;
     return g_globalResult;
 }
