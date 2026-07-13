@@ -20,6 +20,7 @@ PUBLIC int coreSumPoint(Point p);          // struct param -> interface table ty
 PUBLIC void coreSetResult(int v);          // writes g_result -> direction In
 PUBLIC int coreProcess(int a, int b);      // calls libNormalize -> cross-module call
 PUBLIC int coreOrchestrate(int a, int b);  // hub: calls libAdd + libNormalize + utilCompute + utilScale -> fan-out
+PUBLIC int coreConfigure(int base);        // calls utilSetBase (an In interface) -> shows an inbound edge in the diagram
 PUBLIC Mode coreSetMode(Mode m);           // Mode enum param -> interface table type
 
 // Flowchart patterns

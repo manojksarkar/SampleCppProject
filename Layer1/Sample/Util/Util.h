@@ -12,6 +12,7 @@ PUBLIC int utilNorm(int v, int max);          // calls utilCompute + utilClip
 PUBLIC int utilBlend(int a, int b, int w);    // weighted blend; calls utilClamp
 PUBLIC int utilLoopAccum(int n);              // for loop accumulator
 PUBLIC int utilChain(int v);                  // chain: utilAbs -> utilNorm -> utilScale
+PUBLIC void utilSetBase(int b);               // writes g_utilBase -> direction In (inbound interface)
 
 PRIVATE int utilClip(int v, int lo, int hi);  // raw clamp — private
 PRIVATE int utilDouble(int v);                // doubles value; private helper used in chain

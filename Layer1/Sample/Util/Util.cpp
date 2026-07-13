@@ -26,6 +26,10 @@ PUBLIC int utilCompute(int a, int b) {
     return utilClip(a + b + g_utilBase, -1000, 1000);
 }
 
+PUBLIC void utilSetBase(int b) {
+    g_utilBase = b;   // writes g_utilBase -> direction In
+}
+
 PUBLIC int utilScale(int v, int factor) {
     if (factor == 0) return 0;
     return utilClip(v * factor, -10000, 10000);

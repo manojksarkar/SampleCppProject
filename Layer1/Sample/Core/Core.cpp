@@ -92,6 +92,11 @@ PUBLIC int coreOrchestrate(int a, int b) {
     return sum + norm + comp + scale;
 }
 
+PUBLIC int coreConfigure(int base) {
+    utilSetBase(base);            // Core -> Util; utilSetBase is In (writes g_utilBase) -> inbound interface
+    return utilCompute(base, 0);  // Core -> Util
+}
+
 PUBLIC Mode coreSetMode(Mode m) {
     return m;
 }
